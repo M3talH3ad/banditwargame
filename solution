@@ -19,9 +19,37 @@ bandit3: ssh  bandit3@bandit.labs.overthewire.org -p 2220
           cat ./.hidden
           password for bandit4: pIwrPrtPN36QITSp3EQaw936yaFoFgAB
 
-
 bandit4: ssh  bandit4@bandit.labs.overthewire.org -p 2220
           cd inhere
           ls -al
           cat ./*
           password for bandit5: koReBOKuIDDepwhWk7jZC0RTdopnAYKh
+
+bandit5: ssh  bandit5@bandit.labs.overthewire.org -p 2220
+          cd inhere
+          find . -type f -size  1033c ! -executable 
+          password for bandit6: DXjZPULLxYr17uwoI01bNLQbtFemEgo7
+ 
+bandit6: ssh  bandit6@bandit.labs.overthewire.org -p 2220
+          find . -size 33c -group bandit6 -user bandit7 | grep bandit7          
+          password for bandit7: HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs
+
+bandit7: ssh  bandit7@bandit.labs.overthewire.org -p 2220
+          strings data.txt | grep millionth          
+          password for bandit8: cvX2JJa4CFALtqS87jk27qwqGhBM9plV
+
+bandit8: ssh  bandit8@bandit.labs.overthewire.org -p 2220
+          strings data.txt | sort | uniq -c | sort -r
+          password for bandit9: UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR
+
+bandit9: ssh  bandit9@bandit.labs.overthewire.org -p 2220
+          strings data.txt | grep ==
+          password for bandit10: truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk
+
+bandit10: ssh  bandit10@bandit.labs.overthewire.org -p 2220
+          base64 -d data.txt
+          password for bandit11: IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR
+ 
+bandit11: ssh  bandit11@bandit.labs.overthewire.org -p 2220
+          cat data.txt | tr 'n-za-mN-ZA-M' 'a-zA-Z'
+          password for bandit112: 5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu
