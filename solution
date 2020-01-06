@@ -1,0 +1,27 @@
+bandit0: ssh  bandit0@bandit.labs.overthewire.org -p 2220
+          ls
+          cat readme
+          password for bandit1: boJ9jbbUNNfktd78OOpsqOltutMc3MY1
+
+bandit1: ssh  bandit1@bandit.labs.overthewire.org -p 2220
+          ls
+          cat ./-
+          password for bandit2: CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
+
+bandit2: ssh  bandit2@bandit.labs.overthewire.org -p 2220
+          ls
+          cat spaces\ in\ this\ filename 
+          password for bandit3: UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
+          
+bandit3: ssh  bandit3@bandit.labs.overthewire.org -p 2220
+          cd inhere 
+          ls -al
+          cat ./.hidden
+          password for bandit4: pIwrPrtPN36QITSp3EQaw936yaFoFgAB
+
+
+bandit4: ssh  bandit4@bandit.labs.overthewire.org -p 2220
+          cd inhere
+          ls -al
+          cat ./*
+          password for bandit5: koReBOKuIDDepwhWk7jZC0RTdopnAYKh
