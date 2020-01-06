@@ -52,4 +52,26 @@ bandit10: ssh  bandit10@bandit.labs.overthewire.org -p 2220
  
 bandit11: ssh  bandit11@bandit.labs.overthewire.org -p 2220
           cat data.txt | tr 'n-za-mN-ZA-M' 'a-zA-Z'
-          password for bandit112: 5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu
+          password for bandit12: 5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu
+     
+     
+bandit12: ssh  bandit12@bandit.labs.overthewire.org -p 2220
+          Please follow any online tutorial. This invovles recursive use of gzip, bzip2, tar, xxd, cp and mv commands.
+          password for bandit13: 8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
+
+
+bandit13: ssh  bandit13@bandit.labs.overthewire.org -p 2220
+          copy sshkey.private to your desktop. Then chmod 600 sshkey.private. 
+          ssh -i sshkey.private ssh  bandit14@bandit.labs.overthewire.org -p 2220
+          cat /etc/bandit_pass/bandit14
+          password for bandit14: 4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e
+
+bandit14: ssh  bandit14@bandit.labs.overthewire.org -p 2220
+          nc localhost 30000
+          password for bandit15: BfMYroe26WYalil77FoDi9qh59eK5xNr
+
+
+bandit15: ssh  bandit15@bandit.labs.overthewire.org -p 2220
+          openssl s_client -ign_eof -connect localhost:30001
+          password for bandit16: cluFn7wTiGryunymYOu4RcffSxQluehd  
+ 
